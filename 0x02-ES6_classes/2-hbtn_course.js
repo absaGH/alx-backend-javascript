@@ -13,7 +13,7 @@ export default class HolbertonCourse {
     }
 
     if (Object.getPrototypeOf(students) === Array.prototype) {
-      this._students = [...students];
+      this._students = students;
     } else {
       throw TypeError(' Students must be a string array');
     }
@@ -49,7 +49,7 @@ export default class HolbertonCourse {
 
   set students(std) {
     if (Object.getPrototypeOf(std) === Array.prototype) {
-      this._students = [...std];
+      this._students = std;
     } else {
       throw TypeError('Students must be a string');
     }
