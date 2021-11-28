@@ -28,6 +28,6 @@ export default class Pricing {
   }
 
   convertPrice(amount, conversionRate) {
-    return this._amount * conversionRate;
+    return this.amount * conversionRate;
   }
 }
