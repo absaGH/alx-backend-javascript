@@ -17,7 +17,7 @@ app.route('/students')
       const data = await countStudents(pth);
       res.send(`${tag}${data.join('\n')}`);
     } catch (error) {
-      res.send(error.message);
+      res.status(404).send(error.message);
     }
   });
 
