@@ -29,6 +29,7 @@ function countStudents(pth) {
           }
         }
         const message = [];
+        message.push(`Number of students: ${len - 1}`);
         for (let i = 0; i < FIELD.length; i += 1) {
           console.log(`Number of students in ${FIELD[i]}: ${Fcount[i]}. List: ${LIST_OF_FIRSTNAMES[i]}`);
           message.push(`Number of students in ${FIELD[i]}: ${Fcount[i]}. List: ${LIST_OF_FIRSTNAMES[i]}`);
