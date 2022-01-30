@@ -4,7 +4,11 @@ function calculateNumber(type, a, b) {
     } else if (type === 'SUBTRACT') {
 	return Math.round(a) - Math.round(b);
     } else if (type === 'DIVIDE') {
-	return Math.round(a) / Math.round(b);
+	if (b != 0) {
+	    return Math.round(a) / Math.round(b);
+	} else {
+	    return 'Error';
+	}
     }
 }
 
