@@ -16,7 +16,7 @@ describe('Index page', () => {
 });
 
 describe('valid id', () => { 
-    it('GET /cart/:id(number)', (done) => {
+    it('GET /cart/:id', (done) => {
        const options = {
           url: 'http://localhost:7865/cart/12',
           method: 'GET',
