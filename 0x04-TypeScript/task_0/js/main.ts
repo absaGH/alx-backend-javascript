@@ -21,10 +21,10 @@ const stud2: Student = {
 
 const studentList: Student[] = [stud1, stud2];
 const headers: string[] = ['firstName', 'location'];
-const table = document.createElement('table');
-let tr = table.insertRow(-1);
+const table: HTMLTableElement = document.createElement('table');
+let tr: HTMLTableRowElement = table.insertRow(-1);
 for (let h = 0; h < 2; h++) {
-  let th = document.createElement('th');
+  let th: HTMLTableCellElement = document.createElement('th');
   th.innerHTML = headers[h];
   tr.appendChild(th);
   }
@@ -32,8 +32,8 @@ for (let h = 0; h < 2; h++) {
 for (let i = 0; i < studentList.length; i++) {
   tr = table.insertRow(-1);
   for (let j = 0; j < headers.length; j++) {
-    let tdName = document.createElement('td');
-    let tdlocation = document.createElement('td');
+    let tdName:  HTMLTableCellElement= document.createElement('td');
+    let tdlocation: HTMLTableCellElement = document.createElement('td');
     tdName = tr.insertCell(-1);
     tdName.innerHTML = studentList[i].firstName;
     tdlocation = tr.insertCell(-1);
